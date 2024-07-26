@@ -4,6 +4,7 @@
 git_user_id="network1211"
 git_repo_id="swagger"
 release_note="Minor update"
+branch_name="new-branch"
 
 # Initialize Git repository if not already initialized
 if [ ! -d ".git" ]; then
@@ -26,3 +27,6 @@ git remote remove origin
 git remote add origin https://network1211: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@github.com/network1211/swagger.git
 git push -u origin master
 
+# Create a new branch and push
+git checkout -b ${branch_name}
+git push -u origin ${branch_name}
