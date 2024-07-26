@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration
-git_user_id="j.lee@f5.com"
+git_user_id="network1211"
 git_repo_id="network1211"
 release_note="Minor update"
 
@@ -18,8 +18,11 @@ git config user.name "network1211"
 git add .
 git commit -m "${release_note}"
 
-# Set remote origin and push changes
-#git remote add origin https://github.com/${git_user_id}/${git_repo_id}.git
-#git push -u origin master
-git remote add origin https://${git_user_id}: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@github.com/${git_user_id}/${git_repo_id}.git
+# Remove existing remote origin if it exists
+git remote remove origin
+
+# Set remote origin and push changes using a Personal Access Token (PAT)
+# Replace 'YOUR_PERSONAL_ACCESS_TOKEN' with your actual PAT
+git remote add origin https://network1211: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@github.com/network1211/network1211.git
 git push -u origin master
+
