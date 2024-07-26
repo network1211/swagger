@@ -1,0 +1,16 @@
+# coding: utf-8
+
+# flake8: noqa
+from __future__ import absolute_import
+# import models into model package
+from swagger_server.models.inline_response2_xx import InlineResponse2XX
+from swagger_server.models.inline_response2_xx1 import InlineResponse2XX1
+from swagger_server.models.inline_response2_xx2 import InlineResponse2XX2
+from swagger_server.models.inline_response2_xx3 import InlineResponse2XX3
+from swagger_server.models.inline_response2_xx4 import InlineResponse2XX4
+from swagger_server.models.inline_response2_xx_order_address import InlineResponse2XXOrderAddress
+from swagger_server.models.referfriends_oidctoken_body import ReferfriendsOidctokenBody
+from swagger_server.models.update_payment_info_by_id_dyn_body import UpdatePaymentInfoByIdDYNBody
+from swagger_server.models.v2_move_order_body import V2MoveOrderBody
+from swagger_server.models.v2_order_addresses_body import V2OrderAddressesBody
+from swagger_server.models.v2_place_order_body import V2PlaceOrderBody

@@ -1,0 +1,1065 @@
+openapi: 3.0.3
+info:
+  title: arcadia-demo
+  description: Swagger auto-generated from learnt schema for arcadia-demo
+  version: '1.0.2'
+servers:
+- url: http://apigw-be.xcmesh.global
+- url: https://apigw-be.xcmesh.global
+paths:
+  /api/v1/auth/refer-friends/oidc-token:
+    post:
+      description: Swagger auto-generated from learnt schema
+      operationId: api_v1_auth_refer_friends_oidc_token_post
+      parameters:
+      - name: accept_encoding
+        in: header
+        required: false
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: postman_token
+        in: header
+        description: Word
+        required: false
+        style: simple
+        explode: false
+        schema:
+          pattern: "^[A-Za-z0-9-_]+$"
+          type: string
+      - name: x_volterra_truncated_hdr
+        in: header
+        description: Word
+        required: false
+        style: simple
+        explode: false
+        schema:
+          pattern: "^[A-Za-z0-9-_]+$"
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/referfriends_oidctoken_body'
+      responses:
+        "2XX":
+          description: ""
+          headers:
+            access-control-allow-credentials:
+              description: Word
+              style: simple
+              explode: false
+              schema:
+                pattern: "^[A-Za-z0-9-_]+$"
+                type: string
+            access-control-allow-origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            content-type:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            x-volterra-truncated-hdr:
+              description: Word
+              style: simple
+              explode: false
+              schema:
+                pattern: "^[A-Za-z0-9-_]+$"
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_2XX'
+        "401":
+          description: ""
+        "422":
+          description: ""
+        "502":
+          description: ""
+        default:
+          description: ""
+      security:
+      - Basic-4RNGD8Y: []
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+  /api/v2/changeOrderStopLimit:
+    get:
+      description: Swagger auto-generated from learnt schema
+      operationId: api_v2_change_order_stop_limit_get
+      parameters:
+      - name: accept_encoding
+        in: header
+        required: false
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: postman_token
+        in: header
+        description: Word
+        required: false
+        style: simple
+        explode: false
+        schema:
+          pattern: "^[A-Za-z0-9-_]+$"
+          type: string
+      - name: x_volterra_truncated_hdr
+        in: header
+        description: Word
+        required: false
+        style: simple
+        explode: false
+        schema:
+          pattern: "^[A-Za-z0-9-_]+$"
+          type: string
+      responses:
+        "2XX":
+          description: ""
+          headers:
+            access-control-allow-credentials:
+              description: Word
+              style: simple
+              explode: false
+              schema:
+                pattern: "^[A-Za-z0-9-_]+$"
+                type: string
+            access-control-allow-origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            content-type:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            x-volterra-truncated-hdr:
+              description: Word
+              style: simple
+              explode: false
+              schema:
+                pattern: "^[A-Za-z0-9-_]+$"
+                type: string
+        "401":
+          description: ""
+        default:
+          description: ""
+      security:
+      - JWT-JjcxXjQ: []
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+  /api/v2/getStock:
+    get:
+      description: Swagger auto-generated from learnt schema
+      operationId: api_v2_get_stock_get
+      parameters:
+      - name: accept_encoding
+        in: header
+        required: false
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: postman_token
+        in: header
+        description: Word
+        required: false
+        style: simple
+        explode: false
+        schema:
+          pattern: "^[A-Za-z0-9-_]+$"
+          type: string
+      - name: x_volterra_truncated_hdr
+        in: header
+        description: Word
+        required: false
+        style: simple
+        explode: false
+        schema:
+          pattern: "^[A-Za-z0-9-_]+$"
+          type: string
+      responses:
+        "2XX":
+          description: ""
+          headers:
+            access-control-allow-credentials:
+              description: Word
+              style: simple
+              explode: false
+              schema:
+                pattern: "^[A-Za-z0-9-_]+$"
+                type: string
+            access-control-allow-origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            content-type:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            x-volterra-truncated-hdr:
+              description: Word
+              style: simple
+              explode: false
+              schema:
+                pattern: "^[A-Za-z0-9-_]+$"
+                type: string
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  anyOf:
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                x-content-type: application/json
+        default:
+          description: ""
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+  /api/v2/moveOrder:
+    get:
+      description: Swagger auto-generated from learnt schema
+      operationId: api_v2_move_order_get
+      parameters:
+      - name: accept_encoding
+        in: header
+        required: false
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: postman_token
+        in: header
+        description: Word
+        required: false
+        style: simple
+        explode: false
+        schema:
+          pattern: "^[A-Za-z0-9-_]+$"
+          type: string
+      - name: x_volterra_truncated_hdr
+        in: header
+        description: Word
+        required: false
+        style: simple
+        explode: false
+        schema:
+          pattern: "^[A-Za-z0-9-_]+$"
+          type: string
+      responses:
+        "2XX":
+          description: ""
+          headers:
+            access-control-allow-credentials:
+              description: Word
+              style: simple
+              explode: false
+              schema:
+                pattern: "^[A-Za-z0-9-_]+$"
+                type: string
+            access-control-allow-origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            content-type:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            x-volterra-truncated-hdr:
+              description: Word
+              style: simple
+              explode: false
+              schema:
+                pattern: "^[A-Za-z0-9-_]+$"
+                type: string
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  anyOf:
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                  - type: object
+                x-content-type: application/json
+        "401":
+          description: ""
+        default:
+          description: ""
+      security:
+      - JWT-JjcxXjQ: []
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+    post:
+      description: Swagger auto-generated from learnt schema
+      operationId: api_v2_move_order_post
+      parameters:
+      - name: accept_encoding
+        in: header
+        required: false
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: postman_token
+        in: header
+        description: Word
+        required: false
+        style: simple
+        explode: false
+        schema:
+          pattern: "^[A-Za-z0-9-_]+$"
+          type: string
+      - name: x_volterra_truncated_hdr
+        in: header
+        description: Word
+        required: false
+        style: simple
+        explode: false
+        schema:
+          pattern: "^[A-Za-z0-9-_]+$"
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/v2_moveOrder_body'
+      responses:
+        "2XX":
+          description: ""
+          headers:
+            access-control-allow-credentials:
+              description: Word
+              style: simple
+              explode: false
+              schema:
+                pattern: "^[A-Za-z0-9-_]+$"
+                type: string
+            access-control-allow-origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            content-type:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            x-volterra-truncated-hdr:
+              description: Word
+              style: simple
+              explode: false
+              schema:
+                pattern: "^[A-Za-z0-9-_]+$"
+                type: string
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/inline_response_2XX_1'
+                x-content-type: application/json
+        "401":
+          description: ""
+        default:
+          description: ""
+      security:
+      - JWT-JjcxXjQ: []
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+  /api/v2/orderAddresses:
+    post:
+      description: Swagger auto-generated from learnt schema
+      operationId: api_v2_order_addresses_post
+      parameters:
+      - name: accept_encoding
+        in: header
+        required: false
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: postman_token
+        in: header
+        description: Word
+        required: false
+        style: simple
+        explode: false
+        schema:
+          pattern: "^[A-Za-z0-9-_]+$"
+          type: string
+      - name: x_volterra_truncated_hdr
+        in: header
+        description: Word
+        required: false
+        style: simple
+        explode: false
+        schema:
+          pattern: "^[A-Za-z0-9-_]+$"
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/v2_orderAddresses_body'
+      responses:
+        "2XX":
+          description: ""
+          headers:
+            access-control-allow-credentials:
+              description: Word
+              style: simple
+              explode: false
+              schema:
+                pattern: "^[A-Za-z0-9-_]+$"
+                type: string
+            access-control-allow-origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            content-type:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            x-volterra-truncated-hdr:
+              description: Word
+              style: simple
+              explode: false
+              schema:
+                pattern: "^[A-Za-z0-9-_]+$"
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_2XX_2'
+        default:
+          description: ""
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+  /api/v2/placeOrder:
+    post:
+      description: Swagger auto-generated from learnt schema
+      operationId: api_v2_place_order_post
+      parameters:
+      - name: accept_encoding
+        in: header
+        required: false
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: postman_token
+        in: header
+        description: Word
+        required: false
+        style: simple
+        explode: false
+        schema:
+          pattern: "^[A-Za-z0-9-_]+$"
+          type: string
+      - name: x_volterra_truncated_hdr
+        in: header
+        description: Word
+        required: false
+        style: simple
+        explode: false
+        schema:
+          pattern: "^[A-Za-z0-9-_]+$"
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/v2_placeOrder_body'
+      responses:
+        "2XX":
+          description: ""
+          headers:
+            access-control-allow-credentials:
+              description: Word
+              style: simple
+              explode: false
+              schema:
+                pattern: "^[A-Za-z0-9-_]+$"
+                type: string
+            access-control-allow-origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            content-type:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            x-volterra-truncated-hdr:
+              description: Word
+              style: simple
+              explode: false
+              schema:
+                pattern: "^[A-Za-z0-9-_]+$"
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_2XX_3'
+        default:
+          description: ""
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+  /api/v2/updatePaymentInfoById/{DYN}:
+    put:
+      description: Swagger auto-generated from learnt schema
+      operationId: api_v2_update_payment_info_by_id_dynput
+      parameters:
+      - name: accept_encoding
+        in: header
+        required: false
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: postman_token
+        in: header
+        description: Word
+        required: false
+        style: simple
+        explode: false
+        schema:
+          pattern: "^[A-Za-z0-9-_]+$"
+          type: string
+      - name: x_volterra_truncated_hdr
+        in: header
+        description: Word
+        required: false
+        style: simple
+        explode: false
+        schema:
+          pattern: "^[A-Za-z0-9-_]+$"
+          type: string
+      - name: DYN
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/updatePaymentInfoById_DYN_body'
+      responses:
+        "2XX":
+          description: ""
+          headers:
+            access-control-allow-credentials:
+              description: Word
+              style: simple
+              explode: false
+              schema:
+                pattern: "^[A-Za-z0-9-_]+$"
+                type: string
+            access-control-allow-origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            content-type:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            x-volterra-truncated-hdr:
+              description: Word
+              style: simple
+              explode: false
+              schema:
+                pattern: "^[A-Za-z0-9-_]+$"
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_2XX_4'
+        "401":
+          description: ""
+        default:
+          description: ""
+      security:
+      - JWT-JjcxXjQ: []
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+components:
+  schemas:
+    v2_orderAddresses_body:
+      required:
+      - name
+      - qty
+      - stock_id
+      type: object
+      properties:
+        name:
+          pattern: "^[A-Za-z0-9-_]+$"
+          type: string
+          description: Word
+        qty:
+          type: integer
+        stock_id:
+          type: integer
+    referfriends_oidctoken_body:
+      required:
+      - name
+      - qty
+      - stock_id
+      type: object
+      properties:
+        name:
+          pattern: "^[A-Za-z0-9-_]+$"
+          type: string
+          description: Word
+        qty:
+          type: integer
+        stock_id:
+          type: integer
+    updatePaymentInfoById_DYN_body:
+      required:
+      - name
+      - qty
+      - stock_id
+      type: object
+      properties:
+        name:
+          pattern: "^[A-Za-z0-9-_]+$"
+          type: string
+          description: Word
+        qty:
+          type: integer
+        stock_id:
+          type: integer
+    v2_moveOrder_body:
+      required:
+      - name
+      - qty
+      - stock_id
+      type: object
+      properties:
+        name:
+          pattern: "^[A-Za-z0-9-_]+$"
+          type: string
+          description: Word
+        qty:
+          type: integer
+        stock_id:
+          type: integer
+    v2_placeOrder_body:
+      required:
+      - name
+      - qty
+      - stock_id
+      type: object
+      properties:
+        name:
+          pattern: "^[A-Za-z0-9-_]+$"
+          type: string
+          description: Word
+        qty:
+          type: integer
+        stock_id:
+          type: integer
+    inline_response_2XX_4:
+      required:
+      - active
+      - created_on
+      - email
+      - first_name
+      - id
+      - last_login
+      - last_name
+      - oauth_provider
+      - oauth_uid
+      - photo
+      - photoUrl
+      - user_phone
+      - username
+      type: object
+      properties:
+        active:
+          type: string
+        created_on:
+          type: string
+        email:
+          type: string
+        first_name:
+          type: string
+        id:
+          type: integer
+        last_login:
+          type: string
+        last_name:
+          type: string
+        oauth_provider:
+          type: string
+        oauth_uid:
+          type: string
+        photo:
+          type: string
+        photoUrl:
+          type: string
+        user_phone:
+          type: string
+        username:
+          type: string
+          description: Credentials
+          x-pii: {}
+      example:
+        last_login: last_login
+        oauth_uid: oauth_uid
+        active: active
+        last_name: last_name
+        photo: photo
+        photoUrl: photoUrl
+        created_on: created_on
+        oauth_provider: oauth_provider
+        user_phone: user_phone
+        id: 0
+        first_name: first_name
+        email: email
+        username: username
+    inline_response_2XX:
+      required:
+      - comment
+      - coupon_id
+      - created_at
+      - customer_email
+      - customer_firstname
+      - customer_id
+      - customer_lastname
+      - discount
+      - id
+      - increment_id
+      - orderAddress
+      - orderItems
+      - payment_method
+      - shipping_method
+      - status
+      - total_price
+      - updated_at
+      type: object
+      properties:
+        comment:
+          type: string
+        coupon_id:
+          type: string
+        created_at:
+          type: string
+        customer_email:
+          type: string
+        customer_firstname:
+          type: string
+        customer_id:
+          type: string
+        customer_lastname:
+          type: string
+        discount:
+          type: string
+        id:
+          type: integer
+        increment_id:
+          type: string
+        orderAddress:
+          type: array
+          items:
+            $ref: '#/components/schemas/inline_response_2XX_orderAddress'
+        orderItems:
+          type: array
+          items: {}
+        payment_method:
+          type: string
+        shipping_method:
+          type: string
+        status:
+          type: string
+        total_price:
+          type: string
+        updated_at:
+          type: string
+      example:
+        orderAddress:
+        - zip: zip
+          full_name: full_name
+          address_type: address_type
+          city: city
+          phone: phone
+          address_line_1: address_line_1
+          address_line_2: address_line_2
+          id: 1
+          customer_id: 6
+          region: region
+          order_id: 5
+          country_id: country_id
+        - zip: zip
+          full_name: full_name
+          address_type: address_type
+          city: city
+          phone: phone
+          address_line_1: address_line_1
+          address_line_2: address_line_2
+          id: 1
+          customer_id: 6
+          region: region
+          order_id: 5
+          country_id: country_id
+        customer_lastname: customer_lastname
+        total_price: total_price
+        customer_firstname: customer_firstname
+        created_at: created_at
+        discount: discount
+        orderItems:
+        - ""
+        - ""
+        coupon_id: coupon_id
+        updated_at: updated_at
+        increment_id: increment_id
+        shipping_method: shipping_method
+        customer_email: customer_email
+        comment: comment
+        id: 0
+        customer_id: customer_id
+        payment_method: payment_method
+        status: status
+    inline_response_2XX_3:
+      required:
+      - created_at
+      - id
+      - name
+      - order_id
+      - price
+      - qty
+      - stock_id
+      - updated_at
+      type: object
+      properties:
+        created_at:
+          type: string
+        id:
+          type: string
+        name:
+          type: string
+        order_id:
+          type: integer
+        price:
+          type: string
+        qty:
+          type: integer
+        stock_id:
+          type: integer
+        updated_at:
+          type: string
+      example:
+        updated_at: updated_at
+        price: price
+        qty: 6
+        name: name
+        created_at: created_at
+        id: id
+        order_id: 0
+        stock_id: 1
+    inline_response_2XX_orderAddress:
+      required:
+      - address_line_1
+      - address_line_2
+      - address_type
+      - city
+      - country_id
+      - customer_id
+      - full_name
+      - id
+      - phone
+      - region
+      - zip
+      type: object
+      properties:
+        address_line_1:
+          type: string
+        address_line_2:
+          type: string
+        address_type:
+          type: string
+        city:
+          type: string
+        country_id:
+          type: string
+        customer_id:
+          type: integer
+        full_name:
+          type: string
+        id:
+          type: integer
+        order_id:
+          type: integer
+        phone:
+          type: string
+        region:
+          type: string
+        zip:
+          type: string
+      example:
+        zip: zip
+        full_name: full_name
+        address_type: address_type
+        city: city
+        phone: phone
+        address_line_1: address_line_1
+        address_line_2: address_line_2
+        id: 1
+        customer_id: 6
+        region: region
+        order_id: 5
+        country_id: country_id
+    inline_response_2XX_2:
+      required:
+      - address_line_1
+      - address_line_2
+      - address_type
+      - city
+      - country_id
+      - customer_id
+      - full_name
+      - id
+      - order_id
+      - phone
+      - region
+      - zip
+      type: object
+      properties:
+        address_line_1:
+          type: string
+        address_line_2:
+          type: string
+        address_type:
+          type: string
+        city:
+          type: string
+        country_id:
+          type: string
+        customer_id:
+          type: integer
+        full_name:
+          type: string
+        id:
+          type: integer
+        order_id:
+          type: integer
+        phone:
+          type: string
+        region:
+          type: string
+        zip:
+          type: string
+      example:
+        zip: zip
+        full_name: full_name
+        address_type: address_type
+        city: city
+        phone: phone
+        address_line_1: address_line_1
+        address_line_2: address_line_2
+        id: 6
+        customer_id: 0
+        region: region
+        order_id: 1
+        country_id: country_id
+    inline_response_2XX_1:
+      required:
+      - address_line_1
+      - address_line_2
+      - city
+      - country_id
+      - customer_id
+      - full_name
+      - id
+      - phone
+      - region
+      - zip
+      type: object
+      properties:
+        address_line_1:
+          type: string
+        address_line_2:
+          type: string
+        city:
+          type: string
+        country_id:
+          type: string
+        customer_id:
+          type: integer
+        full_name:
+          type: string
+        id:
+          type: string
+        phone:
+          type: string
+        region:
+          type: string
+        zip:
+          type: string
+      example:
+        zip: zip
+        full_name: full_name
+        city: city
+        phone: phone
+        address_line_1: address_line_1
+        address_line_2: address_line_2
+        id: id
+        customer_id: 0
+        region: region
+        country_id: country_id
+  securitySchemes:
+    Basic-4RNGD8Y:
+      type: http
+      scheme: basic
+      x-basicInfoFunc: swagger_server.controllers.authorization_controller.check_Basic_4RNGD8Y
+    JWT-JjcxXjQ:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      x-bearerInfoFunc: swagger_server.controllers.authorization_controller.check_JWT_JjcxXjQ
+
