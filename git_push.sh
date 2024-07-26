@@ -23,6 +23,6 @@ git remote remove origin
 
 # Set remote origin and push changes using a Personal Access Token (PAT)
 # Replace 'YOUR_PERSONAL_ACCESS_TOKEN' with your actual PAT
-git remote add origin https://network1211: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@github.com/network1211/network1211.git
+git remote add origin https://network1211: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@github.com/network1211/swagger.git
 git push -u origin master
 
