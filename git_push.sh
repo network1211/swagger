@@ -2,7 +2,7 @@
 
 # Configuration
 git_user_id="network1211"
-git_repo_id="network1211"
+git_repo_id="swagger"
 release_note="Minor update"
 
 # Initialize Git repository if not already initialized
